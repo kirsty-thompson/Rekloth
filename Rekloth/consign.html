@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>REKLOTH - Consign</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="rekloth.css">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+<header>
+
+<!-- Load icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- The form -->
+<form class="example" action="action_page.php">
+  <input type="text" placeholder="Search.." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+
+</header>
+
+<nav>
+	<ul>
+		<li><a href="home.html">HOME</a></li> 
+			<div class="dropdown">
+		<li><a href="women.html"><button class="dropbtn">WOMEN</button></a></li>
+ 			 	<div class="dropdown-content">
+    				<a href="women.html">Clothing</a>
+    				<a href="accessories.html">Accessories</a>
+  				</div>
+			</div>
+		<li><a href="men.html">MEN</a></li>
+			<div class="dropdown">
+		<li><a href="faqs.html"><button class="dropbtn">FAQ</button></a></li>
+ 			 	<div class="dropdown-content">
+    				<a href="shipping.html">Shipping, Returns, Privacy & Terms</a>
+  				</div>
+			</div>
+		<li><a href="contactus.html">CONTACT US</a></li>
+		<li><a href="designers.html">DESIGNERS</a></li>
+		<li><a href="consign.html">CONSIGN</a></li>
+	<ul>
+</nav>
+
+<!-- consignment information -->
+
+<main>
+	<h2>CONSIGN</h2>
+	<h3 class="spacing-consign">HOW IT WORKS</h3>
+		<h3><u>1 - WHAT CAN YOU CONSIGN?</u></h3>
+			<p>All new and genty used - Women's Clothes and Accessories</p>
+			<small><a href="designers.html">DESIGNERS WE ACCEPT</a> &nbsp; <a href="faqs.html">ITEM REQUIREMENTS</a></small>
+		<br>
+		<h3><u>2 - CHOOSE YOUR METHOD OF SHIPPING - TWO EASY WAYS TO CONSIGN</u></h3>
+			<p><b>1 - </b>We will send you a consignment kit with a bag and a prepaid label to ship to us. ($15)</p>
+			<p><b>2 - </b>We will email you a prepaid label and you ship to us in any box or bag you like. ($10)</p>
+		
+		<h3><u>3 - LET US DO ALL THE WORK</u></h3>
+			<p>We will sort, price, photograph, and market each item sent that is accepted. Once you send it off, all you need to do is sit back and relax!</p>
+			<small><a href="https://tools.usps.com/schedule-pickup-steps.htm">See how you can get your items picked up by USPS from your home for free</a></small>
+
+		<h3><u>4 - GET PAID</u></h3>
+			<p><i>Our comission structure is simple:</i></p>
+			<p><b>1 - CASH - </b>payment of 45% of each item's sold amount through <b>PayPal</b></p>
+			<p><b>2 - STORE CREDIT - </b>payment of 55% of each item's sold amount through <b>Rekloth Store Credit</b></p>
+			<p>An <b>additional 15%</b> will be automatically added to either option if you consing with us any <u>luxury item(s)</u></p>
+		<br>
+		<br>
+		<h3>What about unaccepted items?</h3>
+			<p><i>Choose from two options:</i></p>
+			<p><b>1 - </b>Select to have any unaccepted item(s) <b>returned </b>($10)</p>
+			<p><b>2 - </b>Select to <b>donate</b> any unaccepted item(s) to charity</p>
+		<p><small>For more information and to view the consignment agreement, terms and conditions click <a href="privacy.html"> here </a></small></p>
+		<br>
+
+<h3 class="spacing-consign">CONSIGNMENT FORM</h3>
+
+<!--put consignment form here-->
+<div class="container_consignment">
+<form class="consignment_form" method="post" action="#">
+		<label for="myFName"><b>First Name</b><br></label>
+		<input type="text" name="myFName" id="myFName">
+<br>
+		<label for="LName"><b>Last Name</b><br></label>
+		<input type="text" id="LName" name="LName">
+<br>
+		<label for="myEmail"><b>E-mail</b><br></label>
+		<input type="text" id="myEmail" name="myEmail">
+<br>
+		<label for="myPhone"><b>Phone</b><br></label>
+		<input type="text" id="myPhone" name="myPhone">
+<br>
+		<label for="address"><b>Address</b><br></label>
+		<input type="text" id="address" name="address">
+<br>
+		<label for="shipmethod"><b>Shipping Method</b><br></label>
+		<input type="radio" name="shipmethod" id="favkit" value="kit">Consignment kit shipped to you<br>
+		<input type="radio" name="shipmethod" id="favself" value="self">Use your own shipping method<br>
+<br>
+		<label for="shipmethod"><b>Choice of Payment</b><br></label>
+		<input type="radio" name="payment" id="favcash" value="cash">Cash<br>
+		<input type="radio" name="payment" id="favcredit" value="credit">Store Credit<br>
+<br>
+		<label for="shipmethod"><b>Unaccepted Items</b><br></label>
+		<input type="radio" name="return" id="favship" value="ship">Ship them back<br>
+		<input type="radio" name="return" id="favdonate" value="donate">Donate<br>
+
+<br>
+		<input type="submit" value="Submit">
+	</form>
+</div>
+
+
+<!-- consignment form table -->
+
+<table class="shippingtable" border="1">
+	<tr>
+		<th colspan="3" style="font-size: 20px;"><i>Consignment Options</i></th>
+	</tr>
+	<tr>
+		<td style="background-color: #D5D5D5; font-weight: bold;">Shipping Method</td>
+		<td>Consignment kit shipped to you <br><b>$15</b></td>
+		<td>Use your own form of shipping, prepaid label sent to you <br><b>$10</b></td>
+	</tr>
+	<tr>
+		<td style="background-color: #D5D5D5; font-weight: bold;">Choice of Payment</td>
+		<td>Cash<br><b>45%</b></td>
+		<td>Store Credit<br><b>55%</b></td>
+	</tr>
+	<tr>
+		<td style="background-color: #D5D5D5; font-weight: bold;">Return Unnaccepted Items?</td>
+		<td>Yes, ship them back to you<br><b>$10</b></td>
+		<td>No, donate unused items to charity<br><b>Free</b></td>
+	</tr>
+</table>
+
+
+</main>
+
+<footer>
+		<h3 class="secretsales">WANT TO BE NOTIFIED OF OUR SECRET SALES?</h3>
+	<!-- Load icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- The form -->
+<form class="email" action="action_page.php">
+  <input type="text" placeholder="Email..." name="search">
+  <button type="submit"><i class="email">Subscribe</i></button>
+</form>
+
+	<p><a class="footerlink" href="contactus.html">CONTACT US at <a class="contactemail" href="mailto:contact@rekloth.com">contact@rekloth.com</a></a></p>
+	<p><a class="footerlink" href="consign.html">SHIPPING INFORMATION</a></p>
+	<p><a class="footerlink" href="faqs.html">FAQ</a></p>
+	<p><a class="footerlink" href="faqs.html">PRIVACY POLICY</p>
+	<p><a class="footerlink" href="designers.html">DESIGNERS</a></p>
+
+</footer>
+</body>
+</html>

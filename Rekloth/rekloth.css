@@ -1,0 +1,550 @@
+header {
+	background-color: white;
+	background-image: url(rekloth.jpeg);
+	background-repeat: no-repeat;
+	background-position: left;
+	color: black;
+	padding-left: 20px;
+	font-family: sans-serif;
+	height: 50px;
+	width: auto;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	font-size: 150%;
+}
+body {
+	font-family: avenir, sans-serif;
+}
+nav {
+	background-color: #D5D5D5;
+	font-family: avenir, sans-serif;
+	text-align: left;
+	word-spacing: 3px;
+	height: auto;
+	width: auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	margin-bottom: none;
+}
+nav a {
+	text-decoration: none;
+	color: #000000;
+}
+nav a:hover {
+	color: #FFFFFF;
+}
+nav li { display: inline-block;
+		padding: 0.25em 0.75em 0.25em 0.75em; 
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+}
+main {
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	display: block;
+	font-family: avenir, sans-serif;
+}
+h1 {
+	margin-bottom: 0;
+	margin-top: 10px;
+	font-family: avenir, sans-serif;
+}
+h2 {
+	font-family: avenir light, sans-serif;
+	width: auto;
+	border-bottom: 2px solid #959595;
+
+}
+h3 {
+	font-size: 20px;
+}
+a {
+	color: #000000;
+}
+a:hover {
+	color: #8B8B8B;
+}
+a.contactemail {
+	color: white;
+}
+a.contactemail:hover {
+	color: #8B8B8B;
+}
+a.footerlink {
+	color: white;
+	text-decoration: none;
+}
+a.footerlink:hover {
+	color: #8B8B8B;
+}
+footer {
+	background-color: black;
+	width: auto;
+	height: 400px;
+	background-image: url(rekloth.jpeg);
+	background-repeat: no-repeat;
+	background-position: 20px 40px;
+	color: white;
+	padding-left: 25px;
+	padding-top: 40px;
+	padding-right: 25px;
+}
+.secretsales {
+	text-align: right;
+	padding-right: 20px;
+	font-style: italic;
+	letter-spacing: 0.5px;
+	
+}
+ul {
+	list-style-type: none;
+}
+.designers {
+	column-count: 3;
+	font-size: 18px;
+}
+.productwrapper {
+	display: inline-block;
+	margin-right: 20px;
+	justify-content: center;
+}
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap; 
+	width: 100%;
+	padding: none;
+	justify-content: center;
+	align-items: center;
+	flex-basis: 100%;
+	flex: 1;
+	overflow: none;
+	margin: none;
+}
+.column {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+	padding: 5px;
+	align-items: center;
+	justify-content: center;
+	margin:10px;
+}
+.caption {
+	text-align: center;
+	white-space: nowrap;
+	justify-content: center;
+
+}
+img {
+	width: 100%;
+	height: 100%;
+}
+strike {
+	color: #A7A4A4;
+}
+.description {
+	text-align: center;
+}
+
+/* ---------------- slideshow on homepage used w3schools framework ------------------*/
+* {box-sizing:border-box}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  background-size: cover; 
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-style: bold;
+  background-color: #959595;
+  height: auto;
+  margin-bottom: 8px;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* -------------------------- end of slideshow on home page ----------------------------*/
+.subtitle {
+	font-size: 110%;
+	font-style: italic;
+	text-align: center;
+	padding-top: 10px;
+	letter-spacing: .5px;
+	padding-bottom: 15px;
+	font-family: avenir,sans-serif;
+}
+.link1 {
+	height: 44%;
+	width: auto;
+	padding-bottom: 10px;
+}
+.clotheslink {
+	overflow: hidden;
+	padding: none;
+}
+* {
+  box-sizing: border-box;
+}
+/* --------------------- search bar & email framework from w3schools --------------------*/
+/* Style the search field */
+form.example input[type=text] {
+	padding: 5px;
+  	font-size: 17px;
+ 	border: 1px solid grey;
+  	float: right;
+  	width: 30%;
+  	background: #f1f1f1;
+}
+/* Style the submit button */
+form.example button {
+  float: right;
+  width: 7%;
+  height: 31.5px;
+  padding: 5px;
+  background: grey;
+  color: white;
+  font-size: 15px;
+  border:1px solid grey;
+  border-left: none; 
+  cursor: pointer;
+}
+form.example button:hover {
+  background: grey;
+}
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.logo {
+	height: 50px;
+	width: auto;
+}
+form.email input[type=text] {
+	padding: 5px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: right;
+  width: 30%;
+  background: #f1f1f1;
+}
+/* Style the submit button */
+form.email button {
+  float: right;
+  width: 8%;
+  height: 32px;
+  padding: 5px;
+  background: grey;
+  color: white;
+  font-size: 15px;
+  border:1px solid grey;
+  border-left: none; 
+  cursor: pointer;
+}
+form.email button:hover {
+  background: grey;
+}
+/* ----------------------------- end of search/email forms --------------------------*/
+table.shippingtable {
+	border: 1px solid black;
+	border-spacing: 5px;
+	width: 75%;
+	margin: auto;
+	margin-bottom: 30px;
+	margin-top: 20px;
+}
+td {
+	text-align: center;
+	padding: 5px;
+}
+th {
+	background-color: black;
+	color: white;
+}
+a.top5 {
+	text-decoration: none;
+	font-size: 140%;
+	display: inline;
+}
+p.top5p {
+	text-align: center;
+	padding: 20px;
+}
+section {
+	float: left;
+	width: 50%;
+	padding-right: 50px;
+	padding-left: 10%;
+	text-align: justify;
+}
+aside {
+	float: right;
+	width: 50%;
+	padding-left: 50px;
+	padding-right: 10%;
+	text-align: justify;
+	text-align-last: right;
+}
+.blankspace {
+	height: 260px;
+}
+/* -------------------------- consignment form framework from w3schools ------------------------*/
+/* Style inputs */
+  form.consignment_form input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+/* Style the submit button */
+input[type=submit] {
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* Add a background color to the submit button on mouse-over */
+input[type=submit]:hover {
+  background-color: grey;
+}
+.container_consignment {
+	background-color: #f2f2f2;
+	padding: 5px 20px 15px 20px;
+	border: 1px solid lightgrey;
+	align-content: center;
+	margin: auto;
+	width: 75%;
+}
+/* -----------------------------------end of consignment form-------------------------------------*/
+
+/* -----------------------------------contact us form-------------------------------------*/
+
+ form.contact_form input[type=text] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+/* Style the submit button */
+input[type=submit] {
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* Add a background color to the submit button on mouse-over */
+input[type=submit]:hover {
+  background-color: grey;
+}
+.container_contact {
+	background-color: #f2f2f2;
+	padding: 5px 20px 15px 20px;
+	border: 1px solid lightgrey;
+	align-content: center;
+	margin: auto;
+	width: 75%;
+	margin-bottom: 20px;
+}
+/* -----------------------------------end of contact us form-------------------------------------*/
+
+/* -------------------------------------drop down nav bar----------------------------------------*/
+/* Dropdown Button */
+.dropbtn {
+  background-color: #D5D5D5;
+  color: black;
+  font-size: 16px;
+  border: none;
+  font-family: avenir, sans-serif;
+  padding-left: 0;
+}
+.dropbtn:hover {
+	color: white;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  text-align: left;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #D5D5D5;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #D5D5D5;}
+
+/* -----------------------------------end of drop down nav bar-------------------------------------*/
+.address {
+	text-align: center;
+}
+h3.spacing-consign {
+	font-size: 150%; 
+	letter-spacing: 1px
+}
+header, main, nav, footer, figure, figcaption, aside, section, article {display: block;}
+
+@media only screen and (max-width: 64em) {
+	body { margin: 0;
+		background-color: #FFFFFF; }
+	main { margin-left: 0; }
+	nav { float: none;
+		width: auto;
+		text-align: center;
+		padding-left: 0; }
+	nav li { display: inline-block;
+		 }
+	footer { margin-left: 0; padding-top: 60px; }
+	.subtitle {
+		font-size: 90%;
+	}
+	table { width: 50%; }
+	.link1 { height: 25%; width: auto; }
+	form.example input[type=text] { margin-right: 10px; }
+	.secretsales { font-size: 90%; padding-right: 0;}
+	form.email button { font-size: 40%; width: 75px; }
+	section { padding-left: 20px; padding-right: 20px; }
+	aside { padding-left: 20px; padding-right: 20px; }
+}
+@media only screen and (max-width: 37.5em) {
+	header { padding-top: 0em; }
+	main { padding: 0.1em 1em 0.1em 1em;
+		font-size: 90%; }
+	h1 { font-size: 1.8em; }
+	nav { padding: 0;
+		height: 40px;
+		width: auto;
+		height: auto;
+		text-align: left; }
+	nav li { display: block;
+		margin: 0;
+		 }
+	nav a { display: block; }
+	figure {
+		display: inline;
+	}
+	footer { padding-top: 65px; }
+	.subtitle {
+		font-size: 90%;
+	}
+	.link1 { height: 20%; width: auto; }
+	.secretsales { font-size: 60%; }
+	form.email input[type=text] { font-size: 60%; height: 32px;}
+}
+
+
+
